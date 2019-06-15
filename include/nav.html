@@ -1,0 +1,129 @@
+
+<style>
+    .navbar-nav .dropdown-item:hover{
+        background-color: #5effda;
+    } 
+    .navbar{
+        box-shadow: 0px 0px 5px 0px #444 ;
+    }
+    @media only screen and (max-width:600px){
+        #nav_name{
+            font-size: 13px;
+        }
+    }
+    #nav_name{
+/*            font-size: 13px;*/
+            color: #ec1d2bdb;
+            font-family: serif;
+        }
+    .nav-link{
+        font-weight: 600;
+        font-size :18px;
+    }
+    .laser{
+        align:center;
+        width:100%;
+        margin-top: 0px;
+        width:100%;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    @media only screen and (max-width:768px){
+            .laser{
+                padding:12px;
+                height: 75px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+</style>
+<div class="sticky-top">
+    <div style="background-color: white;">
+<img class="laser img-fluid " src="images/laser.png">
+</div>
+<div id="app" class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       <!--  <a class="navbar-brand"   href="#top"><img height=30px; src="images/logo.png"><b id="nav_name"> Laser Power & Infra Pvt Ltd.</b><span class="sr-only">(current)</span></a> -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+
+
+
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+                        Design Sheets
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="rdso_design_sheet.php">RDSO Design Sheets</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+                        Online Forms
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <!--   <a class="dropdown-item" href="https://goo.gl/forms/ORxYW6Dgv393Dt2x2" target="_blank">Conductor Inprocess</a>
+                        <a class="dropdown-item" href="https://forms.gle/KB6zBqDcJtC6wvgD6" target="_blank">Insulation Inprocess</a>
+                        <a class="dropdown-item" href="https://forms.gle/n6U5Yv8yrY7KN2oF8" target="_blank">Copper Tape Inprocess</a>
+                        <a class="dropdown-item" href="https://goo.gl/forms/lN7wJXj8i3o4ERVv2" target="_blank">Laying Inprocess</a>
+                        <a class="dropdown-item" href="https://goo.gl/forms/CYJDH8U7E2V1VsVx1" target="_blank">Inner Sheath Inprocess</a>
+                        <a class="dropdown-item" href="https://goo.gl/forms/QzTHpoda0bfUcKIg1" target="_blank">Armouring Inprocess</a>
+                        <a class="dropdown-item" href="https://goo.gl/forms/k5MdJJWwPr13p1gy1" target="_blank">Outer Sheath Inprocess</a>
+                        <a class="dropdown-item" href="https://forms.gle/aFdT1MQHuLdxKiySA" target="_blank">NC Inprocess Inspection Report</a>
+                        <a class="dropdown-item" href="https://forms.gle/nVCwZWCLNrQdEWTLA" target="_blank">Hot Set & Permanent Set Records</a>
+                        <a class="dropdown-item" href="main.php" ><b>View All</b></a> -->
+                        <a class="dropdown-item" href="main.php" >HT Inprocess</a>
+                        <a class="dropdown-item" href="main2.php" >RDSO Inprocess</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 10px;">
+                        Inprocess Records
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="worksheet.php#RDSO INPROCESS" onclick="myaccordion('RDSO INPROCESS')">RDSO Inprocess</a>
+                        <a class="dropdown-item" href="worksheet.php#SERVICE CABLE INPROCESS" onclick="myaccordion('SERVICE CABLE INPROCESS')">SERVICE CABLE Inprocess</a>
+                        <a class="dropdown-item" href="worksheet.php#POWER CABLE & LT INPROCESS" onclick="myaccordion('POWER CABLE & LT INPROCESS')">POWER CABLE & LT Inprocess</a>
+                        <a class="dropdown-item" href="worksheet.php#AB CABLE INPROCESS" onclick="myaccordion('AB CABLE INPROCESS')">AB CABLE Inprocess</a>
+                        <a class="dropdown-item" href="worksheet.php#HT INPROCESS" onclick="myaccordion('HT INPROCESS')">HT Inprocess</a>
+                        <a class="dropdown-item" href="worksheet.php"><b>View All Sheets</b></a>
+                    </div>
+                </li>
+                 <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 20px;">Pre-Inspection</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="rdso_samp.php" target="_blank">RDSO SAMPLING (Internal)</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-right: 20px;">Android APP</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="Downloads/LaserCableScan-2.1.apk">LaserCable QR Scanner App</a>
+                    <a class="dropdown-item" href="Downloads/LaserCableRDSOInprocess.apk">LaserCable RDSO Inprocess App</a>
+                    </div>
+                </li>
+                
+                
+                <li class="nav-item" style="margin-right: 15px; margin-top: 8px;">
+                    Welcome, <?php echo $login_session; ?>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-danger nav-link" href="logout.php" style="color:white;">Log Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+</div>
