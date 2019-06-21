@@ -340,3 +340,13 @@ echo arraytostring($remain_drum_after_sample7)."<br><br><br>";
 ?> -->
 </body>
 </html>
+<script>
+    function hideme()
+    {
+      document.getElementById('mybtn').style.display ='none'; //first hide the button
+      setTimeout(function(){ //using setTimeout function
+      document.getElementById('mybtn').style.display ='block'; //displaying the button again after 1000ms or 1 seconds
+    }
+    ,1000); 
+    }
+</script>
